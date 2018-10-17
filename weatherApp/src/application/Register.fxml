@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Register">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="usernameTextField" layoutX="254.0" layoutY="94.0" promptText="username" />
+            <Button layoutX="265.0" layoutY="313.0" mnemonicParsing="false" onAction="#registerAction" text="register" />
+            <Button layoutX="33.0" layoutY="22.0" mnemonicParsing="false" onAction="#back" text="&lt;&lt;">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="passTextField" layoutX="254.0" layoutY="150.0" promptText="password" />
+            <PasswordField fx:id="repeatPassTextField" layoutX="254.0" layoutY="213.0" promptText="repeat password" />
+            <Label layoutX="125.0" layoutY="99.0" prefHeight="21.0" prefWidth="88.0" text="Username :" />
+            <Label layoutX="125.0" layoutY="155.0" prefHeight="21.0" prefWidth="85.0" text="Password :" />
+            <Label layoutX="74.0" layoutY="218.0" prefHeight="21.0" prefWidth="136.0" text="Repeat Password :" />
+            <Label fx:id="noMatchLabel" layoutX="83.0" layoutY="273.0" prefHeight="21.0" prefWidth="485.0" textFill="#eb0505" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
